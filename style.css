@@ -1,0 +1,410 @@
+*{
+  border: 0;
+    margin:0;
+    padding:0;
+    font-family:'Big John Regular';
+}
+@font-face {
+  font-family: 'Big John Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Big John Regular'), url('Big John.woff') format('woff');
+  }
+  
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  width: 0; 
+  position: absolute;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-image: url(./images/vaporwave_sidebar.gif);
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s;
+  border: 3px solid rgba(22, 182, 212, 1);
+  box-shadow: inset 0 0 10px rgba(113,213,255, 0.5),
+  inset 0 0 20px rgba(113,213,255, 0.5),
+  0 0 10px rgba(113,213,255, 0.3),
+  0 0 20px rgba(113,213,255, 0.3),
+  0 0 40px rgba(113,213,255, 0.3),
+  0 0 80px rgba(113,213,255, 0.3),
+  0 0 160px rgba(113,213,255, 0.3),
+  0 0 320px rgba(113,213,255, 0.3); 
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 70px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffc2fd;
+  text-shadow: 0 0 10px #f205ae,
+  0 0 20px #f205ae,
+  0 0 40px #f205ae,
+  0 0 80px #f205ae,
+  0 0 160px #f205ae,
+  0 0 320px #f205ae,
+  0 0 640px #f205ae;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #000000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ffc2fd;
+  text-shadow: 0 0 10px #f205ae,
+  0 0 20px #f205ae,
+  0 0 40px #f205ae,
+  0 0 80px #f205ae,
+  0 0 160px #f205ae,
+  0 0 320px #f205ae,
+  0 0 640px #f205ae;
+  padding: 10px 15px;
+  border: none;
+  position: absolute; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+}
+
+.openbtn:hover {
+  color:#000000;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.parallax{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.scrollcontainer{
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  padding: 0;
+  position: fixed;
+}
+
+  .spotifyplayer{
+      background: none;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+  }
+
+ .content#hero{
+    color: #1f0e28;
+    border: 3px solid rgba(22, 182, 212, 0.3);
+    padding: 20px;
+    width: 500px;
+    height: 100px;
+    cursor: pointer;
+    animation: blink 8s infinite;
+      position:relative;
+      transform: translateY(-50%);
+      z-index: 2;
+  }
+
+  .content{
+    background-color: #000000;
+    color: #ffc2fd;
+    text-shadow: 0 0 10px #f205ae;
+    border: 3px solid rgba(22, 182, 212, 1);
+    box-shadow: inset 0 0 10px rgba(113,213,255, 0.5),
+    inset 0 0 20px rgba(113,213,255, 0.5),
+    0 0 10px rgba(113,213,255, 0.3),
+    0 0 20px rgba(113,213,255, 0.3),
+    0 0 40px rgba(113,213,255, 0.3),
+    0 0 80px rgba(113,213,255, 0.3),
+    0 0 160px rgba(113,213,255, 0.3),
+    0 0 320px rgba(113,213,255, 0.3);
+    padding: 20px;
+    width: 600px;
+    height: 450px;
+    cursor: pointer;
+    position:relative;
+  }
+  .me{
+    background: url(./images/smolder.png);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #f205ae;
+    box-shadow: 0 0 10px #f205ae,
+    0 0 20px #f205ae;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: -50px;
+    top: -140px;
+    cursor: pointer;
+  }
+  .me2{
+    background: url(./images/croatia.png);
+    background-size: cover;
+    border: 3px solid #f205ae;
+    box-shadow: 0 0 10px #f205ae,
+    0 0 20px #f205ae;
+    padding: 20px;
+    height: 450px;
+    width: 300px;
+    left: 50px;
+    position: relative;
+    cursor: pointer;
+  }
+
+/* project gallery */
+marquee{
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffc2fd;
+  text-shadow: 0 0 10px #f205ae,
+               0 0 20px #f205ae,
+               0 0 40px #f205ae,
+               0 0 80px #f205ae,
+               0 0 160px #f205ae,
+               0 0 320px #f205ae,
+               0 0 640px #f205ae;
+  width: 100%;
+  height: 5vh;
+  position:absolute;
+  top: 0%;
+   
+}
+  .gallery {
+    background: url("./images/vaporwave_mountains.jpg");
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  .project {
+    background-color: #000000;
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: inset 0 0 10px rgba(113,213,255, 0.5),
+    inset 0 0 20px rgba(113,213,255, 0.5),
+    0 0 10px rgba(113,213,255, 0.3),
+    0 0 20px rgba(113,213,255, 0.3),
+    0 0 40px rgba(113,213,255, 0.3),
+    0 0 80px rgba(113,213,255, 0.3),
+    0 0 160px rgba(113,213,255, 0.3),
+    0 0 320px rgba(113,213,255, 0.3);
+    line-height: 0;
+    cursor: pointer;
+    color: #ffc2fd;
+    text-shadow: 0 0 10px #f205ae;
+    border: 3px solid rgba(22, 182, 212, 1);
+  }
+  
+  .project > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .project > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .project:hover { flex: 1 1 50%; }
+  .project:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+  /*contact details*/
+
+  .details{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    width: 100%;
+    background: #000000;
+    padding: 25px;
+    color: #ffc2fd;
+    text-shadow: 0 0 10px #f205ae;
+    border: 3px solid rgba(22, 182, 212, 1);
+    box-shadow: inset 0 0 10px rgba(113,213,255, 0.5),
+    inset 0 0 20px rgba(113,213,255, 0.5),
+    0 0 10px rgba(113,213,255, 0.3),
+    0 0 20px rgba(113,213,255, 0.3),
+    0 0 40px rgba(113,213,255, 0.3),
+    0 0 80px rgba(113,213,255, 0.3),
+    0 0 160px rgba(113,213,255, 0.3),
+    0 0 320px rgba(113,213,255, 0.3);
+  }
+  
+  .details h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffc2fd;
+    text-shadow: 0 0 10px #f205ae;
+  }
+  
+  .details .input_field{
+    margin-bottom: 10px;
+  }
+  
+  .details .input_field input[type="text"],
+  .details textarea{
+    background: #ffc2fd;
+    border: 3px solid #f205ae;
+    box-shadow: 0 0 10px #f205ae;
+    color: #000000;
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .details textarea{
+    resize: none;
+    height: 80px;
+  }
+  
+  .details .submitBtn input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: #ffc2fd;
+    border: 3px solid #f205ae;
+    box-shadow: 0 0 10px #f205ae,
+    0 0 20px #f205ae;
+    color: #000000;
+    letter-spacing: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  #error_message{
+    margin-bottom: 20px;
+    background: #ffc2fd;
+    color: #000000;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
+
+/* skills icons status */
+  .devicon-python-plain#unlit{
+    color: #1f0e28;
+    text-shadow: 0 0 10px #f205ae;
+  }
+  .devicon-mysql-plain#unlit{
+    color: #1f0e28;
+    text-shadow: 0 0 10px #f205ae;
+  }
+  .devicon-css3-plain#unlit{
+    color: #1f0e28;
+    text-shadow: 0 0 10px #f205ae;
+  }
+  .devicon-html5-plain#unlit{
+    color: #1f0e28;
+    text-shadow: 0 0 10px #f205ae;
+  }
+  .devicon-javascript-plain#unlit{
+    color: #1f0e28;
+    text-shadow: 0 0 10px #f205ae;
+  }
+  .parallax#home{
+    background-color: #000000;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: 100%, 50%;
+    overflow: hidden;
+  }
+  .parallax#about{
+    background: url("./images/retro_vaporwave.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 100%, 50%;
+    overflow: hidden;
+  }
+  .parallax#projects{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 100%, 50%;
+    overflow: hidden;
+  }
+  .parallax#contactme{
+    background: url("./images/vaporwave_astronaut.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 100%, 50%;
+    overflow: hidden;
+  }
+/*title sign blink*/
+  @keyframes blink {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+      color: #1f0e28;
+      text-shadow: none;
+      box-shadow: none;
+      border: 3px solid rgba(22, 182, 212, 0.3);
+    }
+    
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 100% {
+      border: 3px solid rgba(22, 182, 212, 1);
+      color: #ffc2fd;
+    text-shadow: 0 0 10px #f205ae,
+                 0 0 20px #f205ae,
+                 0 0 40px #f205ae,
+                 0 0 80px #f205ae,
+                 0 0 160px #f205ae,
+                 0 0 320px #f205ae,
+                 0 0 640px #f205ae;
+    box-shadow: inset 0 0 10px rgba(113,213,255, 0.5),
+                inset 0 0 20px rgba(113,213,255, 0.5),
+                0 0 10px rgba(113,213,255, 0.3),
+                0 0 20px rgba(113,213,255, 0.3),
+                0 0 40px rgba(113,213,255, 0.3),
+                0 0 80px rgba(113,213,255, 0.3),
+                0 0 160px rgba(113,213,255, 0.3),
+                0 0 320px rgba(113,213,255, 0.3)
+  }
+    }
+  
+

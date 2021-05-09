@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div id="mySidebar" class="sidebar" loading="lazy">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#projects">Projects</a>
+		<a href="#contactme">Contact Me</a>
+	  </div>
+		<button class="openbtn" onclick="openNav()">&#9776;</button>
+	<div class="scrollcontainer">
+		<div class="parallax" id="home">
+			<div class="content" id="hero">
+					<small>Portfolio Website </small>
+					<h1>Declan Allen - Data scientist</h1>
+			</div>
+		</div>
+		<div class="parallax" id="about" loading="lazy">
+			<div class="me"></div>
+			<div class="content">
+				<h1>About</h1>
+				<small>Junior data scientist, <br/>
+				check out my project portfolio below and please contact me if your looking to collab</small>
+				<br/>
+				<br/>
+				<h1>Skills</h1>
+				<small>Python 3.0: </small>
+				<h1><i class="devicon-python-plain"> </i><i class="devicon-python-plain"> </i><i class="devicon-python-plain"> </i><i class="devicon-python-plain" id="unlit"> </i><i class="devicon-python-plain" id="unlit"> </i></h1>
+				<small>MySQL:</small>
+				<h1><i class="devicon-mysql-plain"> </i><i class="devicon-mysql-plain"> </i><i class="devicon-mysql-plain"> </i><i class="devicon-mysql-plain" id="unlit"> </i><i class="devicon-mysql-plain" id="unlit"> </i></h1>
+				<small>HTML5</small>
+				<h1><i class="devicon-html5-plain"> </i><i class="devicon-html5-plain"> </i><i class="devicon-html5-plain"> </i><i class="devicon-html5-plain"> </i><i class="devicon-html5-plain" id="unlit"> </i></h1>
+				<small>CSS3</small>
+				<h1><i class="devicon-css3-plain"> </i><i class="devicon-css3-plain"> </i><i class="devicon-css3-plain"> </i><i class="devicon-css3-plain" id="unlit"> </i><i class="devicon-css3-plain" id="unlit"> </i></h1>
+				<small>Javascript</small>
+				<h1><i class="devicon-javascript-plain"> </i><i class="devicon-javascript-plain" id="unlit"> </i><i class="devicon-javascript-plain" id="unlit"> </i><i class="devicon-javascript-plain" id="unlit"> </i><i class="devicon-javascript-plain" id="unlit"> </i></h1>
+			</div>
+			<div class="me2"></div>
+		</div>
+		<div class="parallax" id="projects" loading="lazy">
+			<marquee behaviour="scroll" direction="right">
+				<h1>Projects - coming soon</h1>
+			</marquee>
+			<div class="gallery">
+				<div class="project">
+				  <img loading="lazy" src="./images/vaporwave_coming_soon.jpg">
+				  <a href="text.txt"></a>
+				  <span>TEST</span>
+				</div>
+				<div class="project">
+				  <img loading="lazy" src="./images/vaporwave_coming_soon.jpg">
+				  <a href="http:www.google.co.uk"></a>
+				  <span>n/a</span>
+				</div>
+				<div class="project">
+				  <img loading="lazy" src="./images/vaporwave_coming_soon.jpg">
+				  <span>n/a</span>
+				</div>
+				<div class="project">
+				  <img loading="lazy" src="./images/vaporwave_coming_soon.jpg">
+				  <span>n/a</span>
+				</div>
+			  </div>
+		</div>
+		<div class="parallax" id="contactme" loading="lazy">
+			<div class="details">
+				<h2>Contact me</h2>
+				<div id="error_message">
+				   
+				</div>
+				<form  action="https://formspree.io/f/mbjqdeez" method="POST">
+				  <div class="input_field">
+					  <input name="name" type="text" placeholder="Name" id="name">
+				  </div>
+				  <div class="input_field">
+					  <input name="subject" type="text" placeholder="Subject" id="subject">
+				  </div>
+				  <div class="input_field">
+					  <input name="email" type="text" placeholder="Email" id="email">
+				  </div>
+				  <div class="input_field">
+					  <textarea name="message" placeholder="Message" id="message"></textarea>
+				  </div>
+				  <div class="submitBtn">
+					  <input type="submit">
+				  </div>
+				</form>
+			  </div>
+		</div>
+	</div>
+<div class="spotifyplayer">
+	<iframe src="https://open.spotify.com/embed/playlist/3DIjw8eboATMgRN2RC6mz6" height="100" width="200" frameborder = "0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+</body>
+</html>
