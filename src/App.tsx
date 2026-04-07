@@ -16,7 +16,7 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Hello Mister Golland</h1>
+          <h1>Click counter to confirm Dale is Gay</h1>
           <p>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
