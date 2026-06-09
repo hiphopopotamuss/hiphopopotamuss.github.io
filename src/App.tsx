@@ -1,10 +1,9 @@
-import VideoBackground from './components/VideoBackground'
 
 function App() {
 
   return (
        <>
-      <VideoBackground />
+       <div>Work in progress</div>
     </>
   )
 }
